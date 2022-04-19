@@ -1,0 +1,274 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    border: solid 2px;
+    background: rgb(252, 174, 174);
+    
+}
+
+/* CABECERA */
+
+.cabecera-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;   
+}
+
+.cabecera-nav li{
+    margin-right: 50px;    
+    
+}
+
+.cabecera-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    border: solid 2px;
+    padding: 2px;
+
+}
+
+.cabecera-img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: solid 2px;
+    
+}
+
+.cabecera-sup{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 50px;
+    justify-items: center;
+    background-color: rgba(158, 62, 62, 0.808);
+    border: solid 2px;
+}
+
+
+/*  CUERPO  */
+/*index*/
+
+.main-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: xx-large;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.foto-1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 250px;
+    width: 350px;
+    border: solid 2px rgba(158, 62, 62, 0.808);
+    
+}
+
+.main-parrafo1{
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 16px;
+    
+}
+
+.foto-2{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 350px;
+    width: 250px;
+    border: solid 2px rgba(158, 62, 62, 0.808);
+    margin-bottom: 30px;
+        
+}
+
+
+.main-parrafo2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+/*CUERPO PRODUCTOS*/
+
+.main-productos img{
+    height: 350px;
+    width: 350px;
+    border: solid 2px rgba(158, 62, 62, 0.808);
+}
+
+.main-titulo-prod{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: x-large;
+}
+
+.main-productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-productos h3{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/*CUERPO CURSOS*/
+
+.main-titulo-cursos h2{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.main-fotos-cursos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-fotos-cursos img{
+    height: 350px;
+    width: 350px;
+    border: solid 2px rgba(158, 62, 62, 0.808);
+}
+
+.main-fotos-cursos h3{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.main-parrafo-cursos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid;
+    font-weight: 900;
+    margin: 40px;
+    padding: 15px;
+}
+
+
+/*   PIE DE PAGINA   */
+
+
+.contenedor-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 50px);
+    border: solid 2px;
+    background-color: rgba(158, 62, 62, 0.808);
+    grid-template-areas: 
+    "link logo contact"
+    "link logo contact"
+    ;
+    padding: 5vh;
+    justify-items: center;
+    margin-top: 2vh;
+}
+
+.pie-img{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: solid 2px;
+    grid-area: logo;     
+}
+
+.links{
+    display:grid;
+    justify-items: center;
+    grid-area: link;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+i {
+    color: black;
+}
+
+.contactos{
+    display: grid;
+    justify-items: center;
+    grid-area: contact;
+    align-content: space-around;
+    align-items: stretch;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px
+}
+
+
+
+
+       /*FULLL RESPONSIVE*/
+
+
+@media (max-width: 768px) {
+    .cabecera-sup {
+        grid-template-columns: 1fr;
+    }
+
+    .cuerpo{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .contenedor-footer{
+        margin: 10px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
