@@ -45,8 +45,8 @@ body{
     grid-template-rows: 2fr 1fr;
     gap: 50px;
     justify-items: center;
-    background-color: rgba(158, 62, 62, 0.808);
     border: solid 2px;
+    background: linear-gradient(0deg, rgba(230,164,164,1) 0%, rgba(176,54,81,1) 67%);
 }
 
 
@@ -193,7 +193,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 50px);
     border: solid 2px;
-    background-color: rgba(158, 62, 62, 0.808);
+    background: linear-gradient(0deg, rgba(176,54,81,1) 0%, rgba(230,164,164,1) 78%);
     grid-template-areas: 
     "link logo contact"
     "link logo contact"
