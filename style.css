@@ -31,6 +31,12 @@ body{
 
 }
 
+.cabecera-nav li:hover a{
+font-size: 18px;
+font-weight: 900;
+background-color: rgb(247, 173, 214);
+}
+
 .cabecera-img{
     height: 120px;
     width: 120px;
@@ -227,7 +233,7 @@ i {
     display: grid;
     justify-items: center;
     grid-area: contact;
-    align-content: space-around;
+    align-content: space-between;
     align-items: stretch;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px
