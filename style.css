@@ -42,8 +42,28 @@ background-color: rgb(247, 173, 214);
     width: 120px;
     border-radius: 100%;
     border: solid 2px;
-    
+    animation-name:logoRotador;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
+
+@keyframes logoRotador {
+   0%{transform: rotate(0deg);
+   }
+   25%{
+       transform: rotate(45deg);
+   }
+   50%{
+       transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 .cabecera-sup{
     display: grid;
@@ -171,7 +191,15 @@ background-color: rgb(247, 173, 214);
     height: 350px;
     width: 350px;
     border: solid 2px rgba(158, 62, 62, 0.808);
+    transition: height 1s, width 1s;
 }
+
+.main-fotos-cursos img:hover{
+    height: 400px;
+    width: 400px;
+
+}
+
 
 .main-fotos-cursos h3{
     display:flex;
